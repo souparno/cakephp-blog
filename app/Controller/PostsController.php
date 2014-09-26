@@ -1,5 +1,13 @@
 <?php
 
+App::uses('AppController', 'Controller');
+
+/**
+ * Posts Controller
+ *
+ * @property Post $Post
+ * @property PaginatorComponent $Paginator
+ */
 class PostsController extends AppController {
 
     /**
@@ -12,7 +20,7 @@ class PostsController extends AppController {
     public function isAuthorized($user) {
 
         // All registered users can view and add posts
-        if (in_array($this->action, array('index','view', 'add'))) {
+        if (in_array($this->action, array('index', 'view', 'add'))) {
             return TRUE;
         }
 
@@ -66,8 +74,6 @@ class PostsController extends AppController {
                 $this->Session->setFlash(__('The post could not be saved. Please, try again.'));
             }
         }
-        $users = $this->Post->User->find('list');
-        $this->set(compact('users'));
     }
 
     /**
@@ -92,8 +98,6 @@ class PostsController extends AppController {
             $options = array('conditions' => array('Post.' . $this->Post->primaryKey => $id));
             $this->request->data = $this->Post->find('first', $options);
         }
-        $users = $this->Post->User->find('list');
-        $this->set(compact('users'));
     }
 
     /**

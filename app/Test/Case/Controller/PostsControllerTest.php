@@ -13,9 +13,7 @@ class PostsControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.post',
-		'app.user',
-		'app.role'
+		'app.post'
 	);
 
 /**
