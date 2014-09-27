@@ -1,0 +1,22 @@
+2014-09-27 07:06:06 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/cakephp.blog.local/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /var/www/cakephp.blog.local/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#2 /var/www/cakephp.blog.local/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#3 /var/www/cakephp.blog.local/lib/Cake/Model/Model.php(3525): Model->setSource('users')
+#4 /var/www/cakephp.blog.local/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#5 /var/www/cakephp.blog.local/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /var/www/cakephp.blog.local/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /var/www/cakephp.blog.local/app/View/Users/login.ctp(3): FormHelper->create('User')
+#8 /var/www/cakephp.blog.local/lib/Cake/View/View.php(948): include('/var/www/cakeph...')
+#9 /var/www/cakephp.blog.local/lib/Cake/View/View.php(910): View->_evaluate('/var/www/cakeph...', Array)
+#10 /var/www/cakephp.blog.local/lib/Cake/View/View.php(471): View->_render('/var/www/cakeph...')
+#11 /var/www/cakephp.blog.local/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#12 /var/www/cakephp.blog.local/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#13 /var/www/cakephp.blog.local/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /var/www/cakephp.blog.local/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}

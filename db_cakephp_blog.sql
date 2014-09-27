@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 26, 2014 at 08:17 AM
+-- Generation Time: Sep 27, 2014 at 07:44 AM
 -- Server version: 5.5.38-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.4
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `db_cakeauth`
+-- Database: `db_cakephp_blog`
 --
 
 -- --------------------------------------------------------
