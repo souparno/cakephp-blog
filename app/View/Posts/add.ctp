@@ -3,7 +3,6 @@
 	<fieldset>
 		<legend><?php echo __('Add Post'); ?></legend>
 	<?php
-		echo $this->Form->input('user_id');
 		echo $this->Form->input('title');
 		echo $this->Form->input('body');
 	?>
@@ -15,5 +14,6 @@
 	<ul>
 
 		<li><?php echo $this->Html->link(__('List Posts'), array('action' => 'index')); ?></li>
+                <li><?php echo $this->Html->link(__('Logout'), array('controller'=>'users','action' => 'logout')); ?></li>
 	</ul>
 </div>

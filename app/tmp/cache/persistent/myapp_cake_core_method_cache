@@ -1,2 +1,2 @@
-1411784114
-a:1:{s:4:"name";a:2:{s:32:"85c24311d772e477aa8840e6afc1474c";s:17:"`db_cakephp_blog`";s:32:"f94a437fb7858e092079378f93ef2c71";s:7:"`users`";}}
+1411788784
+a:2:{s:4:"name";a:6:{s:32:"85c24311d772e477aa8840e6afc1474c";s:17:"`db_cakephp_blog`";s:32:"f94a437fb7858e092079378f93ef2c71";s:7:"`users`";s:32:"4bf8c442beb0250572f3070bda9f4074";s:7:"`roles`";s:32:"200072d59800a6dfdf4020df7a01b767";s:11:"`Role`.`id`";s:32:"2e2a80ad34298a552f36bfdf33dad7cc";s:14:"`Role`.`title`";s:32:"b4686556afaf1bba0c5270574ca15c54";s:6:"`Role`";}s:6:"fields";a:1:{s:32:"e08e9b4245e5dc86ce516cbc7c90a3d6";a:2:{i:0;s:11:"`Role`.`id`";i:1;s:14:"`Role`.`title`";}}}

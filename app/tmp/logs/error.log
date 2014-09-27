@@ -20,3 +20,12 @@ Stack Trace:
 #13 /var/www/cakephp.blog.local/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #14 /var/www/cakephp.blog.local/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #15 {main}
+2014-09-27 08:41:32 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/logout
+Stack Trace:
+#0 /var/www/cakephp.blog.local/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
