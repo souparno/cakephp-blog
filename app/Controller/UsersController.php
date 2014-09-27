@@ -19,6 +19,8 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
+        $this->Auth->allow('login');
+        $this->Auth->allow('logout');
         $this->Auth->allow('add'); // Letting users register themselves
     }
     
